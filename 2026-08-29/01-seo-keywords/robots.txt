@@ -1,0 +1,71 @@
+# PlayGeko robots.txt
+# https://www.playgeko.com/robots.txt
+# Last updated: 2026-08-29
+
+# --- Default: Allow all crawlable content ---
+User-agent: *
+Allow: /
+
+# --- Search Engine Crawlers ---
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+User-agent: Yandex
+Allow: /
+
+# --- AI Search Crawlers (RAG retrieval) ---
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: YouBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+# --- AI Training Crawlers ---
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: AI2Bot
+Allow: /
+
+# --- Block Aggressive/Bulk Crawlers ---
+User-agent: Bytespider
+Disallow: /
+
+User-agent: Diffbot
+Disallow: /
+
+# --- Block Internal/Non-Public Paths ---
+User-agent: *
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /static/
+Disallow: /*?utm_*
+Disallow: /*?sessionid=*
+Disallow: /*?sort=*
+Disallow: /*?filter=*
+Disallow: /*?page=*
+
+# --- Sitemap Declaration ---
+Sitemap: https://www.playgeko.com/sitemap.xml
